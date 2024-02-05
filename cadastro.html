@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cadastro de Cliente</title>
+</head>
+<body>
+    <form action="cadastraCliente.php" method="POST">
+        <!-- Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome <span>*</span></label>
+            <input type="text" id="nome" name="nome" minlength="2" maxlength="50" required autofocus>
+
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cpf">CPF <span>*</span></label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+
+            <label for="idade">Idade <span>*</span></label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="telefone">Telefone <span>*</span></label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento">
+
+            <label for="sexo">Sexo</label>
+            <input type="radio" id="masculino" name="sexo" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino">
+            <label for="feminino">Feminino</label>
+
+            <label for="estadoCivil">Estado Civil</label>
+            <select id="estadoCivil" name="estadoCivil">
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viuvo">Viúvo</option>
+            </select>
+
+            <!-- Campo adicional somente leitura -->
+            <label for="campoReadOnly">Campo Somente Leitura</label>
+            <input type="text" id="campoReadOnly" name="campoReadOnly" value="Valor Inicial" readonly>
+
+            <!-- Placeholder -->
+            <label for="campoPlaceholder">Campo com Placeholder</label>
+            <input type="text" id="campoPlaceholder" name="campoPlaceholder" placeholder="Digite aqui">
+
+        </fieldset>
+
+        <!-- Endereço -->
+        <fieldset>
+            <legend>Endereço de Entrega</legend>
+            <label for="cep">CEP <span>*</span></label>
+            <input type="text" id="cep" name="cep" required>
+
+            <label for="tipoLogradouro">Tipo de Logradouro <span>*</span></label>
+            <select id="tipoLogradouro" name="tipoLogradouro" required>
+                <option value="rua">Rua</option>
+                <option value="avenida">Avenida</option>
+                <option value="praca">Praça</option>
+            </select>
+
+            <label for="logradouro">Logradouro <span>*</span></label>
+            <input type="text" id="logradouro" name="logradouro" required>
+
+            <label for="bairro">Bairro <span>*</span></label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="cidade">Cidade <span>*</span></label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado <span>*</span></label>
+            <input type="text" id="estado" name="estado" required>
+
+        </fieldset>
+
+        <!-- Informações Adicionais -->
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <label for="interesses">Interesses</label>
+            <input type="checkbox" id="filmes" name="interesses" value="filmes">
+            <label for="filmes">Filmes</label>
+            <input type="checkbox" id="informatica" name="interesses" value="informatica">
+            <label for="informatica">Informática</label>
+            <input type="checkbox" id="games" name="interesses" value="games">
+            <label for="games">Games</label>
+            <input type="checkbox" id="livros" name="interesses" value="livros">
+            <label for="livros">Livros</label>
+            <input type="checkbox" id="roupas" name="interesses" value="roupas">
+            <label for="roupas">Roupas</label>
+
+            <label for="infoAdicionais">Informações Adicionais</label>
+            <textarea id="infoAdicionais" name="infoAdicionais" rows="4" cols="50"></textarea>
+
+            <label for="imagem">Anexar Imagem</label>
+            <input type="file" id="imagem" name="imagem">
+
+            <!-- Campo oculto -->
+            <input type="hidden" name="campoOculto" value="valorOculto">
+
+        </fieldset>
+
+        <!-- Botão de Submissão -->
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
