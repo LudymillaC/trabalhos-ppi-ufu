@@ -1,29 +1,35 @@
 /*Ludymilla Christina*/
+
+
 header{
     background-color: #DDDDDD;
     text-align: center;
-
 }
+
 h1, h2{
     color: 140, 76, 8;
 }
+
 a:link, a:visited{
     color: #ddd;
     display: inline-block;
     text-align: center;
     text-decoration: none;
 }
+
+a{
+    padding-inline: 15px;
+}
+
 .home .galeria .login{
     text-align: left;
     color: #ddd;
-    
-    padding-inline: 5%;
-
-
 }
 
 nav{
     background-color: #555555;
+    text-align: center;
+    padding: 2%;
 }
 
 body{
@@ -33,9 +39,7 @@ body{
     font-size: 1,5;
     width: 60%;
     margin: 0 auto;
-    padding: 2% 0;
-
-    
+    padding: 2%;
 }
 
 main{
@@ -43,17 +47,12 @@ main{
     position: sticky;
     background-color: #FFFFFF;
     border: solid 1px gray;
-    
-}
-nav{
-    
 }
 
 section{
     margin-top: 0px;
     padding-bottom: 5px;
     
-
 }
 
 footer{
