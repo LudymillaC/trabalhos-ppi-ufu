@@ -1,0 +1,114 @@
+/* CSS da página Login */
+/* <p> Digite os seus dados de acesso no campo abaixo: */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000
+}
+
+/* Fundo da página */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #585858;
+}
+
+nav{
+
+    text-align: end;
+    background-color: #585858;
+    color: #ffffff;
+
+
+
+}
+/* Fundo do quadrado do login */
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 205, 205);
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgb(0, 0, 0);
+    gap: 5px
+}
+
+/* Alinhamento do texto Login */
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* <p> Digite os seus dados de acesso no campo abaixo: */
+.formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+}
+
+/* caixa E-mail e Senha */
+.formLogin input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid rgb(181, 181, 181);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+/* Foco da caixa de entrada quando clica para digitar */
+.formLogin input:focus {
+    border: 1px solid #6b6b6b;
+}
+
+/* Foco para label - E-mail e Senha */
+.formLogin label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Esqueci minha senha */
+.formLogin a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    transition: all linear 160ms;
+}
+/* Efeito no Esqueci minha senha quando o mouse passa pelo link */
+.formLogin a:hover {
+    color: #3b3b3b;
+}
+
+/* Efeito no botão *Acessar* sem o mouse passar por cima  */
+.btn {
+    background-color: rgb(150, 150, 150);
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+/* Efeito no botão *Acessar* quando mouse passa por cima */
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #000000;
+    color: #ffffff;
+
+}
