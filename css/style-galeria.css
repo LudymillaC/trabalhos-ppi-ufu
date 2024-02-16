@@ -11,6 +11,10 @@ h1, h2{
     text-align: center;
 }
 
+div{
+    display: inline;
+}
+
 a:link, a:visited{
     color: #ddd;
     display: inline-block;
@@ -20,6 +24,10 @@ a:link, a:visited{
 
 a{
     padding-inline: 15px;
+}
+
+p{
+    margin: 2%;
 }
 
 .home .galeria .login{
@@ -55,6 +63,3 @@ section{
     
 }
 
-footer{
-    text-align: center;
-}

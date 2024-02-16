@@ -22,6 +22,10 @@ a{
     padding-inline: 15px;
 }
 
+p{
+    margin: 2%;
+}
+
 .home .galeria .login{
     color: #ddd;
 }
@@ -56,5 +60,6 @@ section{
 }
 
 footer{
+    padding-top: 1%;
     text-align: center;
 }
