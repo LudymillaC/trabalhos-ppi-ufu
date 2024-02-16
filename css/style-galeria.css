@@ -1,0 +1,60 @@
+/*Ludymilla Christina*/
+/* CSS da página Galeria */
+
+header{
+    background-color: #DDDDDD;
+    text-align: center;
+}
+
+h1, h2{
+    color: 140, 76, 8;
+    text-align: center;
+}
+
+a:link, a:visited{
+    color: #ddd;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a{
+    padding-inline: 15px;
+}
+
+.home .galeria .login{
+    color: #ddd;
+}
+
+nav{
+    background-color: #555555;
+    text-align: center;
+    margin: 0%;
+    padding: 10px;
+}
+
+body{
+    background-color: #ddd;
+    font-family: Helvetica;
+    font-size: 1,5;
+}
+
+main{
+    top: 0;
+    position: sticky;
+    background-color: #FFFFFF;
+    border: solid 1px gray;
+    width: 50%;
+    margin-left: auto;  /*O segredo está aqui*/
+    margin-right: auto; /*O segredo está aqui*/
+}
+
+section{
+    margin-top: 0px;
+    padding-bottom: 5px;
+    
+}
+
+footer{
+    text-align: center;
+}

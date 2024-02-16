@@ -1,6 +1,5 @@
 /*Ludymilla Christina*/
-
-
+/* CSS da página Cadastro */
 header{
     background-color: #DDDDDD;
     text-align: center;
@@ -26,7 +25,13 @@ a{
     color: #ddd;
 }
 
-
+nav{
+    background-color: #555555;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding: 1%;
+}
 
 body{
     background-color: #ddd;
